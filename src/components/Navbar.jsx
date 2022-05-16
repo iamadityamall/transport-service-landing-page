@@ -3,9 +3,20 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import navLinks from "../data/navLinks";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const { navButton, setNavButton } = useGlobalContext();
+  useEffect(() => {
+    if (navButton) {
+      var timeout = setTimeout(() => {
+        setNavButton(false);
+      }, 3000);
+      return () => {
+        clearTimeout(timeout);
+      };
+    }
+  }, [navButton, setNavButton]);
 
   return (
     <header className=" p-2 rounded-b-xl lg:rounded-b-none fixed top-0 w-full bg-white/100 shadow-xl lg:shadow-none">
@@ -39,6 +50,7 @@ const Navbar = () => {
                   key={id}
                   to={navlink.path}
                   className="p-4 sm:text-lg"
+                  onClick={() => setNavButton(false)}
                 >
                   {navlink.name}
                 </Link>
