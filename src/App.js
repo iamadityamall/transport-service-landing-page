@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { useGlobalContext } from "./context";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -7,8 +7,10 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
 const App = () => {
-  const data = useGlobalContext();
-  console.log(data);
+  useEffect(() => {
+    document.title = 'Siddhi Logistics || logistics for all'
+  })
+  
   return (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
