@@ -1,13 +1,11 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import navLinks from "../data/navLinks";
-import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import { useEffect } from "react";
 import Sidebar from "./Home/Sidebar";
 import QuickCallToAction from "./Home/QuickCallToAction";
 import { MdDarkMode } from "react-icons/md";
-
 
 const Navbar = () => {
   const { navButton, setNavButton, darkmode, changemode } = useGlobalContext();
