@@ -17,7 +17,7 @@ const Hero = () => {
         </p>
         <div className="flex items-center space-x-5 p-1">
           <button
-            className="p-4 rounded-lg bg-colorOne font-semibold capitalize text-xs text-left
+            className="text-white p-4 rounded-lg bg-colorOne font-semibold capitalize text-xs text-left tracking-widest
           "
           >
             get quotation
