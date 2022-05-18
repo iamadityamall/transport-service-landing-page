@@ -5,14 +5,16 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import { useEffect } from "react";
 import Sidebar from "./Home/Sidebar";
+import QuickCallToAction from "./Home/QuickCallToAction";
+import { MdDarkMode } from "react-icons/md";
 
 const Navbar = () => {
-  const { navButton, setNavButton } = useGlobalContext();
+  const { navButton, setNavButton, darkmode, changemode } = useGlobalContext();
   useEffect(() => {
     if (navButton) {
       var timeout = setTimeout(() => {
         setNavButton(false);
-      }, 3000);
+      }, 7000);
       return () => {
         clearTimeout(timeout);
       };
@@ -21,19 +23,31 @@ const Navbar = () => {
 
   return (
     <>
-      <header className=" p-2 lg:rounded-b-none fixed top-0 w-full bg-white/100 ">
-        <nav className="font-poppins">
-          <section className="flex justify-between items-center sm:text-2xl p-1 lg:py-4 sm:p-3">
+      <header className="fixed top-0 w-full ">
+        <QuickCallToAction />
+        <nav className="font-poppins w-[90vw] mx-auto xl:w-[65vw]">
+          <section className="flex justify-between items-center sm:text-2xl py-1 md:py-2 lg:py-6">
             <div className="text-2xl p-1 xl:text-3xl text-colorOne">logo</div>
-            <div className="hidden lg:flex lg:space-x-4 capitalize lg:items-center">
+            <div className="hidden lg:flex lg:space-x-2 capitalize lg:items-center">
               {navLinks.map((navlink) => {
                 const { id } = navlink;
                 return (
-                  <Link key={id} to={navlink.path} className="p-2 text-sm">
+                  <a key={id} href={navlink.path} className="p-2 text-sm">
                     {navlink.name}
-                  </Link>
+                  </a>
                 );
               })}
+            </div>
+            <div className="hidden lg:flex space-x-6">
+              <button
+                className={`text-3xl text-colorOne   ${darkmode && "text-black"}`}
+                onClick={() => changemode()}
+              >
+                <MdDarkMode />
+              </button>
+              <button className="text-sm p-4 bg-colorOne rounded-lg">
+                sign in
+              </button>
             </div>
             <button
               type="button"

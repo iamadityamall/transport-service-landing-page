@@ -9,7 +9,7 @@ import Terms from "./pages/Terms";
 const App = () => {
   useEffect(() => {
     document.title = "Siddhi Logistics || logistics for all";
-  });
+  },[]);
 
   return (
     <Routes>

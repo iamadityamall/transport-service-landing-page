@@ -8,9 +8,11 @@ module.exports = {
         colorThree: "#FFFFFF",
       },
       fontFamily: {
-        poppins: ["Poppins","sans-serif"]
-
-      }
+        poppins: ["Poppins", "sans-serif"],
+      },
+      backgroundImage: {
+        logistics: "url('/public/images/complete-logistics.png')",
+      },
     },
   },
   plugins: [],
