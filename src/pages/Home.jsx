@@ -9,7 +9,7 @@ import CallToAction from "../components/Home/CallToAction";
 
 const Home = () => {
   return (
-    <main className="w-[85vw] mx-auto">
+    <main className="w-[90vw] mx-auto">
       <Hero />
       <About />
       <Services />

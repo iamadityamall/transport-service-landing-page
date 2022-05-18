@@ -4,13 +4,13 @@ import { BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <section className="h-[85vh] lg:h-screen flex items-center justify-center">
+    <section className="h-screen lg:h-screen flex items-center justify-center">
       <div className="flex flex-col capitalize font-poppins space-y-2 py-10 px-2">
         <h3 className="text-4xl py-1 font-bold p-1">siddhi logistics</h3>
-        <h2 className="text-sm text-colorTwo/75 px-1">
+        <h2 className="text-[16px] text-colorTwo/75 px-1">
           your preferred logistics partner
         </h2>
-        <p className="text-sm py-2 p-1 leading-relaxed">
+        <p className="text-[15px] py-2 p-1 leading-relaxed">
           right from pickup from supplier's factory to delivery at buyer's. we
           provide all services under one roof. Regardless of your industry or
           commodity,we have solutions to both small and large businesses.
