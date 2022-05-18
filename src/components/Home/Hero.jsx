@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
       <figure className="hidden md:flex">
-        <img src="./images/delivery.png" alt="logistics" className="w-[60vw]" />
+        <img src="./images/vector-1.png" alt="logistics" className="w-[40vw]" />
       </figure>
     </section>
   );
