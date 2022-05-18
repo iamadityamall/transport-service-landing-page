@@ -10,7 +10,7 @@ const Sidebar = ({ setNavButton, navButton }) => {
       }
       }`}
     >
-      <button onClick={() => setNavButton(false)}>
+      <button onClick={() => setNavButton(false)} className="mt-2">
         <IoClose className="text-5xl p-2 text-colorOne" />
       </button>
       <div className="flex flex-col w-full">
