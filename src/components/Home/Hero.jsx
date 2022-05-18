@@ -9,12 +9,16 @@ const Hero = () => {
         <h3 className="text-4xl py-2 font-bold px-1 uppercase tracking-wide leading-snug">
           we keep your business moving
         </h3>
-        <h4 className="text-[16px]  px-1 font-semibold">
+        <h4 className="text-[16px]  px-1">
           {`supply chain, transportation & logistics managment`}
         </h4>
         <p className="text-[15px] py-2 px-1 pt-6 leading-relaxed">
-          we at <span className="border-b-2 border-colorOne">siddhivinayak logistics</span> provide solutions to both
-          small and large businesses, regardless of your industry or commodity.
+          we at{" "}
+          <span className="border-b-2 border-colorOne">
+            siddhivinayak logistics
+          </span>{" "}
+          provide solutions to both small and large businesses, regardless of
+          your industry or commodity.
           {/* right from pickup from supplier's factory to delivery at buyer's. we
           provide all services under one roof. Regardless of your industry or
           commodity,we have solutions to both small and large businesses. */}
