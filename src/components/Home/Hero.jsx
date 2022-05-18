@@ -13,9 +13,9 @@ const Hero = () => {
           {`supply chain, transportation & logistics managment`}
         </h4>
         <p className="text-[15px] py-2 px-1 pt-6 leading-relaxed">
-          we at{" "}
+          we at {"  "}
           <span className="border-b-2 border-colorOne">
-            siddhivinayak logistics
+             siddhivinayak logistics
           </span>{" "}
           provide solutions to both small and large businesses, regardless of
           your industry or commodity.
@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
       <figure className="hidden md:flex">
-        <img src="./images/vector-1.png" alt="logistics" className="w-[40vw]" />
+        <img src="./images/delivery.png" alt="logistics" className="w-[40vw]" />
       </figure>
     </section>
   );
