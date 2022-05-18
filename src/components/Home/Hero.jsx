@@ -5,8 +5,8 @@ import { BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs";
 const Hero = () => {
   return (
     <section className="h-screen lg:h-screen flex items-center justify-center">
-      <div className="flex flex-col capitalize font-poppins space-y-2 py-10 px-2">
-        <h3 className="text-4xl py-1 font-bold p-1">siddhi logistics</h3>
+      <div className="flex flex-col capitalize font-poppins space-y-2 py-10">
+        <h3 className="text-4xl py-2 font-bold px-1">siddhi logistics</h3>
         <h2 className="text-[16px] text-colorTwo/75 px-1">
           your preferred logistics partner
         </h2>
