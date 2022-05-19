@@ -4,9 +4,9 @@ const Contact = () => {
   return (
     <section
       id="#contact"
-      className="flex flex-col items-start font-poppins py-14"
+      className="flex flex-col items-start font-poppins py-14 md:items-center"
     >
-      <div className="flex flex-col items-start space-y-2">
+      <div className="flex flex-col items-start space-y-2 md:items-center">
         <h1 className="text-2xl font-bold capitalize py-4">contact us</h1>
         <p className="border-b-2 border-colorOne text-sm">send your query</p>
         <p className="py-2 text-xs">
@@ -14,8 +14,8 @@ const Contact = () => {
           directly visit our office
         </p>
       </div>
-      <div className="flex flex-col w-full space-y-10">
-        <div className="flex flex-col py-10 items-start">
+      <div className="flex flex-col w-full space-y-10 md:flex-row md:justify-between md:space-y-0 md:items-start md:mt-10">
+        <div className="flex flex-col py-10 items-start md:py-0">
           <form className="text-black flex flex-col space-y-2 p-3 rounded-xl bg-colorOne/25 w-full">
             <input
               type="text"

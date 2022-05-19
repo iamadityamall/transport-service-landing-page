@@ -16,51 +16,53 @@ const Footer = () => {
         darkmode ? "bg-colorOne/95" : "bg-colorOne"
       }`}
     >
-      <section className="flex flex-col py-20 font-poppins space-y-6 w-[90vw] mx-auto">
-        <div className="flex flex-col">
-          <h1 className="font-bold text-lg p-2">siddhivinayak logistics</h1>
-          <p className="p-2 text-sm">
+      <section className="flex flex-col py-10 font-poppins space-y-6 w-[90vw] mx-auto md:flex-row md:justify-between md:items-start md:space-y-0 lg:w-[85vw] lg:py-20">
+        <div className="flex flex-col w-[30vw] lg:w-[40vw]">
+          <h1 className="font-bold text-lg p-2 lg:text-2xl">
+            siddhivinayak logistics
+          </h1>
+          <p className="p-2 text-sm lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
             explicabo dicta dignissimos et animi, repudiandae perspiciatis!
             Quam, recusandae explicabo adipisci maxime iure ab ea fugit?
           </p>
           <ul className="flex px-2 py-4 space-x-5">
-            <li className="text-2xl">
+            <li className="text-3xl cursor-pointer md:hover:text-white">
               <BsInstagram />
             </li>
-            <li className="text-2xl">
+            <li className="text-3xl cursor-pointer md:hover:text-white">
               <BsFacebook />
             </li>
-            <li className="text-2xl">
+            <li className="text-3xl cursor-pointer md:hover:text-white">
               <BsLinkedin />
             </li>
           </ul>
         </div>
         <div className="flex flex-col space-y-4 p-2">
-          <h1 className="text-md font-bold">quick links</h1>
-          <ul className="text-sm space-y-2">
-            <li className="flex items-center space-x-2">
+          <h1 className="text-md font-bold lg:text-xl px-4">quick links</h1>
+          <ul className="text-sm space-y-2 lg:text-lg">
+            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white">
               <BsArrowRightShort />
               <a href="#about">about</a>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white">
               <BsArrowRightShort />
               <a href="#about">services</a>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white">
               <BsArrowRightShort />
               <a href="#about">contact</a>
             </li>
           </ul>
         </div>
         <div className="flex flex-col space-y-4 p-2">
-          <h1 className="text-md font-bold">useful links</h1>
-          <ul className="text-sm space-y-2">
-            <li className="flex items-center space-x-2">
+          <h1 className="text-md font-bold lg:text-xl">useful links</h1>
+          <ul className="text-sm space-y-2 lg:text-lg">
+            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white">
               <BsArrowRightShort />
               <Link to="privacy">privacy</Link>
             </li>
-            <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white">
               <BsArrowRightShort />
               <Link to="terms">{`terms & condition`}</Link>
             </li>
@@ -68,8 +70,8 @@ const Footer = () => {
         </div>
       </section>
       <section className={`shadow-sm`}>
-        <p className="text-center italic font-poppins text-xs font-bold p-2">
-          copywright &copy;siddhivinayak logistics{" "}
+        <p className="text-center italic font-poppins text-xs font-bold p-4">
+          copywright &copy; siddhivinayak logistics{" "}
           <span>{`${new Date().getFullYear().toString()}`}</span> all right
           reserved
         </p>

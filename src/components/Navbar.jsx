@@ -30,7 +30,7 @@ const Navbar = () => {
         }`}
       >
         <QuickCallToAction />
-        <nav className="font-poppins w-[90vw] mx-auto xl:w-[65vw]">
+        <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw]">
           <section className="flex justify-between items-center sm:text-2xl py-3 md:py-4 lg:py-6">
             <div className="">
               <img
