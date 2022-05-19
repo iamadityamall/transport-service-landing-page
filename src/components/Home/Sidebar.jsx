@@ -17,8 +17,7 @@ const Sidebar = ({ setNavButton, navButton }) => {
       <button onClick={() => setNavButton(false)} className="mt-3">
         <IoClose className="text-5xl p-2 text-colorOne" />
       </button>
-      <div className="flex flex-col w-full items-end">
-        <button className="text-sm p-4 bg-colorOne rounded-lg">sign in</button>
+      <div className="flex flex-col w-full text-left">
         {navLinks.map((navlink) => {
           const { id } = navlink;
           return (
@@ -32,6 +31,9 @@ const Sidebar = ({ setNavButton, navButton }) => {
             </Link>
           );
         })}
+        <Link to="/signin" className="p-4 px-6 sm:text-lg font-poppins">
+          sign in
+        </Link>
       </div>
     </aside>
   );

@@ -64,7 +64,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center">
               <button
-                className={`text-3xl text-colorOne   ${
+                className={`text-3xl p-1 text-colorOne   ${
                   darkmode && "text-black"
                 }`}
                 onClick={() => changemode()}
