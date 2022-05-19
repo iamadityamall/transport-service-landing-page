@@ -24,14 +24,14 @@ const Sidebar = ({ setNavButton, navButton }) => {
             <Link
               key={id}
               to={navlink.path}
-              className="p-4 px-6 sm:text-lg font-poppins"
+              className="p-4 px-6 sm:text-lg font-poppins shadow-lg"
               onClick={() => setNavButton(false)}
             >
               {navlink.name}
             </Link>
           );
         })}
-        <Link to="/signin" className="p-4 px-6 sm:text-lg font-poppins">
+        <Link to="/signin" className="p-4 px-6 sm:text-lg font-poppins shadow-lg">
           sign in
         </Link>
       </div>
