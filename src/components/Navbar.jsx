@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Sidebar from "./Home/Sidebar";
 import QuickCallToAction from "./Home/QuickCallToAction";
 import { MdDarkMode } from "react-icons/md";
+import { BsSunFill } from "react-icons/bs";
 
 const Navbar = () => {
   const { navButton, setNavButton, darkmode, changemode } = useGlobalContext();
@@ -50,7 +51,7 @@ const Navbar = () => {
             </div>
             <div className="hidden lg:flex space-x-6">
               <button
-                className={`text-3xl text-colorOne   ${
+                className={`text-xl text-colorOne   ${
                   darkmode && "text-black"
                 }`}
                 onClick={() => changemode()}
@@ -61,13 +62,23 @@ const Navbar = () => {
                 sign in
               </button>
             </div>
-            <button
-              type="button"
-              className="text-2xl p-3 lg:hidden"
-              onClick={() => setNavButton(true)}
-            >
-              <GiHamburgerMenu />
-            </button>
+            <div className="flex items-center">
+              <button
+                className={`text-3xl text-colorOne   ${
+                  darkmode && "text-black"
+                }`}
+                onClick={() => changemode()}
+              >
+                {!darkmode ? <BsSunFill /> : <MdDarkMode />}
+              </button>
+              <button
+                type="button"
+                className="text-2xl p-3 lg:hidden"
+                onClick={() => setNavButton(true)}
+              >
+                <GiHamburgerMenu />
+              </button>
+            </div>
           </section>
         </nav>
       </header>
