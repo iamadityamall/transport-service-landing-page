@@ -11,12 +11,19 @@ const Home = () => {
   return (
     <main className="w-[90vw] mx-auto xl:w-[65vw] scroll-smooth">
       <Hero />
+      <hr/>
       <About />
+      <hr/>
       <Services />
+      <hr />
       <Contact />
+      <hr/>
       <Reviews />
+      <hr/>
       <Questions />
+      <hr/>
       <CallToAction />
+      <hr/>
     </main>
   );
 };
