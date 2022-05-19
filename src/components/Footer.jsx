@@ -16,7 +16,7 @@ const Footer = () => {
         darkmode ? "bg-colorOne/95" : "bg-colorOne"
       }`}
     >
-      <section className="flex flex-col py-10 font-poppins space-y-6 w-[90vw] mx-auto md:flex-row md:justify-between md:items-start md:space-y-0 lg:w-[85vw] lg:py-20">
+      <section className="flex flex-col py-10 font-poppins space-y-6 w-[90vw] mx-auto md:flex-row md:justify-between md:items-start md:space-y-0 lg:w-[85vw] lg:py-10">
         <div className="flex flex-col w-[30vw] lg:w-[40vw]">
           <h1 className="font-bold text-lg p-2 lg:text-2xl">
             siddhivinayak logistics
