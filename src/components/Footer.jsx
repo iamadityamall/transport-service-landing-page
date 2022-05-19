@@ -71,7 +71,7 @@ const Footer = () => {
       </section>
       <section className={`shadow-sm`}>
         <p className="text-center italic font-poppins text-xs font-bold p-4">
-          copywright &copy; siddhivinayak logistics{" "}
+          copyright &copy; siddhivinayak logistics{" "}
           <span>{`${new Date().getFullYear().toString()}`}</span> all right
           reserved
         </p>
