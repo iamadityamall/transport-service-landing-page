@@ -8,7 +8,7 @@ import Terms from "./pages/Terms";
 
 const App = () => {
   useEffect(() => {
-    document.title = "Siddhi Logistics || logistics for all";
+    document.title = "Siddhivinayak Logistics || logistics for all";
   },[]);
 
   return (
