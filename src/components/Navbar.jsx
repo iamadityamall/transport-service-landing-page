@@ -24,7 +24,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed top-0 w-full ">
+      <header
+        className={`fixed top-0 w-full shadow-sm lg:shadow-none ${
+          !darkmode ? "bg-colorTwo " : "bg-colorThree"
+        }`}
+      >
         <QuickCallToAction />
         <nav className="font-poppins w-[90vw] mx-auto xl:w-[65vw]">
           <section className="flex justify-between items-center sm:text-2xl py-3 md:py-4 lg:py-6">
@@ -43,7 +47,11 @@ const Navbar = () => {
               {navLinks.map((navlink) => {
                 const { id } = navlink;
                 return (
-                  <a key={id} href={navlink.path} className="p-2 text-sm hover:shadow-lg hover:border-b-2 hover:border-colorOne">
+                  <a
+                    key={id}
+                    href={navlink.path}
+                    className="p-2 text-sm hover:shadow-lg hover:border-b-2 hover:border-colorOne"
+                  >
                     {navlink.name}
                   </a>
                 );
