@@ -50,7 +50,7 @@ const Navbar = () => {
                   <a
                     key={id}
                     href={navlink.path}
-                    className="p-2 text-sm hover:shadow-lg hover:border-b-2 hover:border-colorOne"
+                    className="p-2 text-sm hover:border-b-2 hover:border-colorOne "
                   >
                     {navlink.name}
                   </a>
