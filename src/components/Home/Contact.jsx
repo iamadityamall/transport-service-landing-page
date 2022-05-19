@@ -20,31 +20,34 @@ const Contact = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-y-6 md:gap-y-0 md:grid-cols-3 md:gap-x-5 lg:grid-cols-4">
-        <form className="text-black w-full space-y-2 p-4 rounded-xl bg-colorOne/25 lg:w-[20vw]">
+        <form className="text-black w-full space-y-2 p-4 rounded-xl bg-colorOne/25 lg:w-[20vw]" action="https://formsubmit.co/addasjii@gmail.com" method="POST">
           <input
             type="text"
             placeholder="full name"
+            name="name"
             className="p-2 rounded-t-xl w-full"
           />
           <input
             type="text"
             placeholder="email@email.com"
+            name="email"
             className="p-2 w-full"
           />
           <input
             type="tel"
             placeholder="contact number"
             className="p-2 w-full"
+            name="telephone"
           />
           <input type="text" placeholder="company" className="p-2 w-full" />
           <textarea
-            name=""
+            name="query"
             id=""
             cols="30"
             rows="10"
             className="rounded-b-xl w-full"
           />
-          <button className="p-2 bg-colorOne rounded-xl">get quote</button>
+          <button className="p-2 bg-colorOne rounded-xl" type="submit">get quote</button>
         </form>
         <div className="p-4 w-full rounded-xl bg-colorOne/40 md:col-span-2 lg:h-full lg:col-span-3">
           <iframe
