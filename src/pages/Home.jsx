@@ -6,6 +6,7 @@ import Contact from "../components/Home/Contact";
 // import Reviews from "../components/Home/Reviews";
 // import Questions from "../components/Home/Questions";
 import CallToAction from "../components/Home/CallToAction";
+import Clients from "../components/Home/Clients";
 
 const Home = () => {
   return (
@@ -17,10 +18,13 @@ const Home = () => {
       <Services />
       <hr />
       <Contact />
+
       {/* <hr/> */}
       {/* <Reviews />
       <hr/>
       <Questions /> */}
+      <hr/>
+      <Clients/>
       <hr/>
       <CallToAction />
       <hr/>
