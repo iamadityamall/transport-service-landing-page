@@ -9,10 +9,9 @@ const Sidebar = ({ setNavButton, navButton }) => {
   const { darkmode } = useGlobalContext();
   return (
     <aside
-      className={`fixed text-black top-0 right-0 h-screen space-y-20 w-screen p-8 transition all delay-300 ease-in-out flex flex-col items-end text-right capitalize lg:hidden bg-white ${
+      className={`fixed text-black top-0 right-0 h-screen space-y-20 w-screen p-8 transition all delay-300 ease-in-out flex flex-col items-end text-right capitalize lg:hidden  ${
         !navButton && "translate-x-full"
-      } ${!darkmode && "bg-colorTwo text-white"}
-      }`}
+      } ${!darkmode ? "bg-colorTwo text-white" : "bg-white"}`}
     >
       <button onClick={() => setNavButton(false)} className="mt-3">
         <IoClose className="text-5xl p-2 text-colorOne" />
