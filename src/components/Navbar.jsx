@@ -27,23 +27,23 @@ const Navbar = () => {
       <header className="fixed top-0 w-full ">
         <QuickCallToAction />
         <nav className="font-poppins w-[90vw] mx-auto xl:w-[65vw]">
-          <section className="flex justify-between items-center sm:text-2xl py-1 md:py-2 lg:py-6">
+          <section className="flex justify-between items-center sm:text-2xl py-3 md:py-4 lg:py-6">
             <div className="">
               <img
                 src={`${
                   darkmode
-                    ? "./images/sddhi-ligh.png"
-                    : "./images/siddhi-dark-1.png"
+                    ? "./images/siddhi-light-2.png"
+                    : "./images/siddhi-dark-2.png"
                 }`}
                 alt="logo"
-                className="w-40"
+                className="h-10 md:h-12 object-cover"
               />
             </div>
             <div className="hidden lg:flex lg:space-x-2 capitalize lg:items-center">
               {navLinks.map((navlink) => {
                 const { id } = navlink;
                 return (
-                  <a key={id} href={navlink.path} className="p-2 text-sm">
+                  <a key={id} href={navlink.path} className="p-2 text-sm hover:shadow-lg hover:border-b-2 hover:border-colorOne">
                     {navlink.name}
                   </a>
                 );
@@ -62,9 +62,9 @@ const Navbar = () => {
                 sign in
               </button>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center lg:hidden">
               <button
-                className={`text-3xl p-1 text-colorOne   ${
+                className={`text-3xl p-1 text-colorOne lg:hidden  ${
                   darkmode && "text-black"
                 }`}
                 onClick={() => changemode()}
@@ -73,7 +73,7 @@ const Navbar = () => {
               </button>
               <button
                 type="button"
-                className="text-2xl p-3 lg:hidden"
+                className="text-2xl p-3"
                 onClick={() => setNavButton(true)}
               >
                 <GiHamburgerMenu />
