@@ -20,7 +20,7 @@ const Contact = () => {
       </div>
       <div className="flex flex-col space-y-10 md:flex-row md:justify-between md:space-y-0 md:items-start md:mt-10 lg:mt-0 lg:grid lg:grid-cols-2 lg:gap- lg:py-16">
         <div className="flex flex-col py-10 items-start md:py-0 w-full lg:grid lg:w-[30vw] ">
-          <form className="text-black flex flex-col space-y-2 p-3 rounded-xl bg-colorOne/25">
+          <form className="text-black w-full flex flex-col space-y-2 p-3 rounded-xl bg-colorOne/25">
             <input
               type="text"
               placeholder="full name"
