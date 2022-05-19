@@ -10,7 +10,7 @@ const Contact = () => {
         <h1 className="text-2xl font-bold capitalize py-4 lg:py-0 lg:text-4xl">
           contact us
         </h1>
-        <p className="border-b-2 border-colorOne text-sm lg:text-lg">
+        <p className="border-b-2 font-bold border-colorOne text-sm lg:text-lg">
           send your query
         </p>
         <p className="py-2 text-xs lg:text-lg lg:py-0">
