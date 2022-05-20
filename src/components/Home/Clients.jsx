@@ -4,7 +4,7 @@ import ClientImageCarousal from "./ClientImageCarousal";
 import { dataImages } from "../../data/images";
 
 const Clients = () => {
-  const [images, setImages] = React.useState(dataImages);
+  const [images,] = React.useState(dataImages);
   const [index1, setIndex1] = React.useState(4);
 
   // const nextSlide = () => {
