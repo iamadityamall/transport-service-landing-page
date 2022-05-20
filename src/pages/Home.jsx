@@ -7,27 +7,27 @@ import Contact from "../components/Home/Contact";
 // import Questions from "../components/Home/Questions";
 import CallToAction from "../components/Home/CallToAction";
 import Clients from "../components/Home/Clients";
-
+import Banner from "../components/Home/Banner";
+import Gallery from "../components/Home/Gallery";
 const Home = () => {
   return (
     <main className="w-[90vw] mx-auto lg:w-[85vw] scroll-smooth">
       <Hero />
-      <hr/>
+      <hr />
+      <Clients />
+      <hr />
+      <Gallery />
+      <hr />
       <About />
-      <hr/>
+      <hr />
       <Services />
       <hr />
       <Contact />
-
-      {/* <hr/> */}
-      {/* <Reviews />
-      <hr/>
-      <Questions /> */}
-      <hr/>
-      <Clients/>
-      <hr/>
+      <hr />
+      <Banner />
+      <hr />
       <CallToAction />
-      <hr/>
+      <hr />
     </main>
   );
 };
