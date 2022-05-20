@@ -25,12 +25,12 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 w-full shadow-sm lg:shadow-none ${
+        className={`fixed top-0 w-full z-10 shadow-sm lg:shadow-none ${
           !darkmode ? "bg-colorTwo " : "bg-colorThree"
         }`}
       >
         <QuickCallToAction />
-        <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw]">
+        <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw] ">
           <section className="flex justify-between items-center sm:text-2xl py-3 md:py-4 lg:py-6">
             <div className="">
               <img
