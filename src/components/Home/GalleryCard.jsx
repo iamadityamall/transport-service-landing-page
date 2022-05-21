@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useEffect, useState } from "react";
-import { BiUpArrowAlt, BiDownArrowAlt } from "react-icons/bi";
+import {  BiDownArrowAlt } from "react-icons/bi";
 
 const GalleryCard = ({ urls }) => {
   const [show, setShow] = useState(false);
