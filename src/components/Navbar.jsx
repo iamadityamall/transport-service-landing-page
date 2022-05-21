@@ -7,6 +7,7 @@ import Sidebar from "./Home/Sidebar";
 import QuickCallToAction from "./Home/QuickCallToAction";
 import { MdDarkMode } from "react-icons/md";
 import { BsSunFill } from "react-icons/bs";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { navButton, setNavButton, darkmode, changemode } = useGlobalContext();
