@@ -9,12 +9,13 @@ import CallToAction from "../components/Home/CallToAction";
 import Clients from "../components/Home/Clients";
 import Banner from "../components/Home/Banner";
 import Gallery from "../components/Home/Gallery";
+
 const Home = () => {
   return (
-    <main className="w-[90vw] mx-auto lg:w-[85vw] scroll-smooth">
+    <main className="w-[90vw] mx-auto lg:w-[85vw] scroll-smooth transition-all duration-150 ease-linear">
       <Hero />
       <hr />
-      <Clients />
+      <Clients/>
       <hr />
       <Gallery />
       <hr />

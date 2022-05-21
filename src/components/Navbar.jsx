@@ -25,12 +25,12 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 w-full z-10 shadow-sm lg:shadow-none ${
+        className={`fixed top-0 w-full z-10 shadow-sm lg:shadow-none transition-all duration-150 ease-linear ${
           !darkmode ? "bg-colorTwo " : "bg-colorThree"
         }`}
       >
         <QuickCallToAction />
-        <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw] ">
+        <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw] transition-all duration-150 ease-linear">
           <section className="flex justify-between items-center sm:text-2xl py-3 md:py-4 lg:py-6">
             <div className="">
               <img
@@ -70,9 +70,9 @@ const Navbar = () => {
                 sign in
               </button>
             </div>
-            <div className="flex items-center lg:hidden">
+            <div className="flex items-center lg:hidden transition-all duration-150 ease-linear">
               <button
-                className={`text-3xl p-1 text-colorOne lg:hidden  ${
+                className={`text-3xl p-1 text-colorOne lg:hidden transition-all duration-150 ease-linear  ${
                   darkmode && "text-black"
                 }`}
                 onClick={() => changemode()}

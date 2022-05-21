@@ -6,7 +6,7 @@ import { ImClock } from "react-icons/im";
 
 const CallToAction = () => {
   return (
-    <section className="flex flex-col py-10 space-y-4 font-poppins md:flex-row md:space-y-0 md:items-start md:justify-between md:space-x-4 lg:grid lg:grid-cols-4">
+    <section className="flex flex-col py-10 space-y-4 font-poppins md:flex-row md:space-y-0 md:items-start md:justify-between md:space-x-4 lg:grid lg:grid-cols-4 transition-all duration-150 ease-linear">
       <div className="flex justify-between items-center md:items-start ">
         <div className="text-colorOne text-5xl p-2 md:text-2xl lg:text-5xl">
           <FaRegMap />

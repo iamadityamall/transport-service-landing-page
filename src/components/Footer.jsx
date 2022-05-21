@@ -12,12 +12,12 @@ const Footer = () => {
   const { darkmode } = useGlobalContext();
   return (
     <footer
-      className={`capitalize mx-auto ${
+      className={`capitalize mx-auto transition-all duration-150 ease-linear ${
         darkmode ? "bg-colorOne/95" : "bg-colorOne"
       }`}
     >
       <section className="flex flex-col py-10 font-poppins space-y-6 w-[90vw] mx-auto md:flex-row md:justify-between md:items-start md:space-y-0 lg:w-[85vw] lg:py-10">
-        <div className="flex flex-col w-[30vw] lg:w-[40vw]">
+        <div className="flex flex-col  lg:w-[40vw]">
           <h1 className="font-bold text-lg p-2 lg:text-2xl">
             siddhivinayak logistics
           </h1>
@@ -55,21 +55,21 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col space-y-4 p-2">
+        <div className="flex flex-col space-y-4 p-2 transition-all duration-150 ease-linear">
           <h1 className="text-md font-bold lg:text-xl">useful links</h1>
           <ul className="text-sm space-y-2 lg:text-lg">
-            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white">
+            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white transition-all duration-150 ease-linear">
               <BsArrowRightShort />
               <Link to="privacy">privacy</Link>
             </li>
-            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white">
+            <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white transition-all duration-150 ease-linear">
               <BsArrowRightShort />
               <Link to="terms">{`terms & condition`}</Link>
             </li>
           </ul>
         </div>
       </section>
-      <section className={`shadow-sm`}>
+      <section className={`shadow-sm transition-all duration-150 ease-linear`}>
         <p className="text-center italic font-poppins text-xs font-bold p-4">
           copyright &copy; siddhivinayak logistics{" "}
           <span>{`${new Date().getFullYear().toString()}`}</span> all right

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import SharedLayout from "./components/SharedLayout";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import "./index.css";
 
 const App = () => {
   useEffect(() => {

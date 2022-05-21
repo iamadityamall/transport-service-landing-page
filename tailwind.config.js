@@ -13,6 +13,20 @@ module.exports = {
       backgroundImage: {
         logistics: "url('/public/images/complete-logistics.png')",
       },
+      animation: {
+        flow: "flow 10s linear infinite",
+        paused:"paused",
+      },
+
+      keyframes: {
+        flow: {
+          "0%": { left: 0 },
+          "100%": { left: -766 },
+        },
+      },
+      transition: {
+        alls: "all .2s ease-out",
+      },
     },
   },
   plugins: [],

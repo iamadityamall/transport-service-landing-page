@@ -3,7 +3,7 @@ import { BiConversation } from "react-icons/bi";
 
 const Card = () => {
   return (
-    <article className="w-full bg-colorOne/20 text-black p-3 rounded-xl space-y-2 font-poppinss">
+    <article className="w-full bg-colorOne/20 text-black p-3 rounded-xl space-y-2 font-poppinss transition-all duration-150 ease-linear">
       <figure>
         <img
           src="./images/delivery.png"
@@ -25,7 +25,9 @@ const Card = () => {
         </p>
       </div>
       <div className="p-2">
-        <button className="bg-colorOne p-3 rounded-lg md:text-xs">Read more</button>
+        <button className="bg-colorOne p-3 rounded-lg md:text-xs">
+          Read more
+        </button>
       </div>
     </article>
   );
