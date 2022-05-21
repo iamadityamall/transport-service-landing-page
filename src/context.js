@@ -3,9 +3,13 @@ import { useContext, useState } from "react";
 
 const AppContext = React.createContext();
 
+
+
+
 const AppProvider = ({ children }) => {
   const [navButton, setNavButton] = useState(false);
   const [darkmode, setDarkmode] = useState(true);
+  
 
   const changemode = () => {
     setDarkmode(!darkmode);

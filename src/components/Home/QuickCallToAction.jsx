@@ -6,7 +6,7 @@ import { BsLinkedin, BsInstagram, BsFacebook } from "react-icons/bs";
 const QuickCallToAction = () => {
   return (
     <div className="w-full hidden md:flex border-b-[1px] border-colorTwo ">
-      <div className="flex justify-between items-center w-[90vw] mx-auto py-3 text-[14px] font-poppins  lg:w-[85vw] lg:py-0">
+      <div className="flex justify-between items-center w-[90vw] mx-auto py-3 text-[14px] font-poppins  lg:w-[85vw] lg:py-0 xl:w-[80vw]">
         <div className="flex items-center space-x-5">
           <div className="flex items-center justify-center space-x-2">
             <div>
