@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useEffect, useState } from "react";
-import {  BiDownArrowAlt } from "react-icons/bi";
+// import { BiDownArrowAlt, BiUpArrowAlt } from "react-icons/bi";
 
 const GalleryCard = ({ urls }) => {
   const [show, setShow] = useState(false);
@@ -9,19 +9,15 @@ const GalleryCard = ({ urls }) => {
 
   console.log(idContainer);
 
-  const translateIdContainer = () => {
-    if (show) {
-      idContainer.current.style.transform = "translateY(0rem)";
-      setShow(false)
-    } else {
-      idContainer.current.style.transform = "translateY(-7rem)";
-      setTimeout(() => {
-        idContainer.current.style.transform = "translateY(0)";
-        setShow(false);
-      }, 5000);
-      setShow(true);
-    }
-  };
+  // const translateIdContainer = () => {
+  //   if (show) {
+  //     idContainer.current.style.transform = "translateY(0rem)";
+  //     setShow(false);
+  //   } else {
+  //     idContainer.current.style.transform = "translateY(-7rem)";
+  //     setShow(true);
+  //   }
+  // };
 
   useEffect(() => {
     if (show) {
@@ -39,27 +35,34 @@ const GalleryCard = ({ urls }) => {
         className="w-full h-full bg-black object-cover object-center lg:hover:scale-150 transition-all duration-200 ease-linear"
       />
       <div
-        className={`transition-all duration-300 ease-linear rounded-lg overflow-hidden cursor-pointer absolute w-full h-40 py-4 px-2 bg-black/80 lg:bg-black/50 -bottom-28 lg:hover:-translate-y-28  lg:hover:bg-black/90`}
+        className={`transition-all duration-300 ease-linear rounded-lg overflow-hidden cursor-pointer absolute w-full py-4 px-2 bg-black/80 lg:bg-black/50 -bottom-36 lg:hover:-translate-y-28  lg:hover:bg-black/90`}
         ref={idContainer}
       >
         {" "}
         <div className="flex justify-between items-center">
           <p
             className="text-white font-bold font-poppins w-full"
-            onClick={() => translateIdContainer()}
+            // onClick={() => translateIdContainer()}
           >
             car
           </p>
-          {show ? (
+          {/* {show ? (
             <button
               className="text-white p-2"
-              onClick={() => translateIdContainer()}
+              // onClick={() => translateIdContainer()}
             >
               <BiDownArrowAlt className="text-white text-2xl" />
             </button>
-          ) : null}
+          ) : (
+            <button
+              className="text-white p-2"
+              // onClick={() => translateIdContainer()}
+            >
+              <BiUpArrowAlt className="text-white text-2xl" />
+            </button>
+          )} */}
         </div>
-        <p className="text-white py-5">
+        <p className="text-white py-5 ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
           illum quidem tempora exercitationem molestiae et ad totam harum
           asperiores animi?

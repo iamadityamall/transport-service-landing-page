@@ -3,8 +3,6 @@ import Hero from "../components/Home/Hero";
 import About from "../components/Home/About";
 import Services from "../components/Home/Services";
 import Contact from "../components/Home/Contact";
-// import Reviews from "../components/Home/Reviews";
-// import Questions from "../components/Home/Questions";
 import CallToAction from "../components/Home/CallToAction";
 import Clients from "../components/Home/Clients";
 import Banner from "../components/Home/Banner";
@@ -15,7 +13,7 @@ const Home = () => {
     <main className="w-[90vw] mx-auto lg:w-[85vw] xl:w-[80vw] scroll-smooth transition-all duration-150 ease-linear">
       <Hero />
       <hr />
-      <Clients/>
+      <Clients />
       <hr />
       <Gallery />
       <hr />
