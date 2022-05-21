@@ -20,7 +20,7 @@ const Gallery = () => {
 
   return (
     <section className="flex flex-col py-20 md:items-center transition-all duration-200 ease-linear">
-      <div className="font-poppins text-center space-y-2 transition-all duration-200 ease-linear">
+      <div className="font-poppins text-left space-y-2 transition-all duration-200 ease-linear md:text-center">
         <h1 className="text-2xl font-bold lg:text-4xl">Gallery</h1>
         <p className="text-xs lg:text-lg ">
           <span className="border-b-2 border-colorOne leading-relaxed transition-all duration-200 ease-linear">

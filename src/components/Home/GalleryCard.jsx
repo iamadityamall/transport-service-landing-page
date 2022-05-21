@@ -41,7 +41,7 @@ const GalleryCard = ({ urls }) => {
         className="w-full h-full bg-black object-cover object-center lg:hover:scale-150 transition-all duration-200 ease-linear"
       />
       <div
-        className={`transition-all duration-300 ease-linear rounded-lg overflow-hidden cursor-pointer absolute w-full py-4 px-2 bg-black/80 lg:bg-black/50 -bottom-40 hover:-translate-y-36  md:-bottom-36 md:hover:-translate-y-32  lg:hover:bg-black/90`}
+        className={`transition-all duration-300 ease-linear rounded-lg overflow-hidden cursor-pointer absolute w-full py-4 px-2 bg-black/80 lg:bg-black/50 -bottom-28 hover:-translate-y-28 sm:-bottom-24 sm:hover:-translate-y-24 md:-bottom-36 md:hover:-translate-y-32  lg:hover:bg-black/90`}
         ref={idContainer}
       >
         {" "}
