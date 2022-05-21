@@ -1,9 +1,9 @@
 import React from "react";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 // import { BiDownArrowAlt, BiUpArrowAlt } from "react-icons/bi";
 
 const GalleryCard = ({ urls }) => {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   const { small } = urls;
   const idContainer = useRef();
 
@@ -19,11 +19,17 @@ const GalleryCard = ({ urls }) => {
   //   }
   // };
 
-  useEffect(() => {
-    if (show) {
-      setShow(true);
-    }
-  }, [show]);
+  // useEffect(() => {
+  //   if (show) {
+  //     setShow(true);
+  //   }
+  // }, [show]);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     idContainer.current.style.transform = "translateY(2)";
+  //   }, 3000);
+  // }, [idContainer]);
 
   return (
     <figure
@@ -35,7 +41,7 @@ const GalleryCard = ({ urls }) => {
         className="w-full h-full bg-black object-cover object-center lg:hover:scale-150 transition-all duration-200 ease-linear"
       />
       <div
-        className={`transition-all duration-300 ease-linear rounded-lg overflow-hidden cursor-pointer absolute w-full py-4 px-2 bg-black/80 lg:bg-black/50 -bottom-36 lg:hover:-translate-y-28  lg:hover:bg-black/90`}
+        className={`transition-all duration-300 ease-linear rounded-lg overflow-hidden cursor-pointer absolute w-full py-4 px-2 bg-black/80 lg:bg-black/50 -bottom-40 hover:-translate-y-36  md:-bottom-36 md:hover:-translate-y-32  lg:hover:bg-black/90`}
         ref={idContainer}
       >
         {" "}
