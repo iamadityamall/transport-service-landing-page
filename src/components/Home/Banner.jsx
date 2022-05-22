@@ -2,7 +2,12 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in"
+      className=""
+    >
       <figure className="grid grid-cols-1 justify-items-center transition-all duration-300 ease-linear rounded-lg overflow-hidden my-10 font-poppins md:grid-cols-2 lg:grid-cols-3">
         <div className="text-center  flex flex-col items-center space-y-7  transition-all duration-300 ease-linear w-full p-10 md:-order-last ">
           <img

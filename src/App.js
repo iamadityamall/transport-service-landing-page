@@ -8,6 +8,7 @@ import Terms from "./pages/Terms";
 import "./index.css";
 import { animateScroll as scroll } from "react-scroll/modules";
 
+
 const App = () => {
   useEffect(() => {
     document.title = "Siddhivinayak Logistics || logistics for all";

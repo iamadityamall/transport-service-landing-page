@@ -24,7 +24,13 @@ const Clients = () => {
   }, [index1, images]);
 
   return (
-    <section id="clients" className="grid grid-cols-1 justify-items-start gap-y-10 py-16 md:justify-items-center lg:grid-cols-2 lg:items-center lg:justify-items-center transition-all duration-150 ease-linear">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in"
+      id="clients"
+      className="grid grid-cols-1 justify-items-start gap-y-10 py-16 md:justify-items-center lg:grid-cols-2 lg:items-center lg:justify-items-center transition-all duration-150 ease-linear"
+    >
       <div className="lg:flex flex-col space-y-2">
         <h1 className="text-2xl font-bold md:text-center lg:text-4xl lg:text-left">
           Our Clients

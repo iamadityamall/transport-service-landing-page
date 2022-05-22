@@ -6,9 +6,14 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen w-full pt-20 flex items-center justify-center md:justify-end lg:grid lg:grid-cols-2 lg:items-center lg:justify-between lg:space-x-0 transition-all duration-150 ease-linear"
+      className="home h-screen w-full pt-20 flex items-center justify-center md:justify-end lg:grid lg:grid-cols-2 lg:items-center lg:justify-between lg:space-x-0 transition-all duration-150 ease-linear"
     >
-      <div className="flex flex-col capitalize font-poppins space-y-1 py-10 items-start md:w-[50vw] lg:w-[60vw] lg:space-y-2">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        className="flex flex-col capitalize font-poppins space-y-1 py-10 items-start md:w-[50vw] lg:w-[60vw] lg:space-y-2"
+      >
         <h3 className="text-4xl py-2 font-bold px-1 uppercase lg:text-6xl">
           we keep your business moving
         </h3>
@@ -51,6 +56,9 @@ const Hero = () => {
           src="./images/delivery.png"
           alt="logistics"
           className="w-[40vw] lg:w-full"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
         />
       </figure>
     </section>

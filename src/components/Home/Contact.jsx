@@ -3,14 +3,17 @@ import React from "react";
 const Contact = () => {
   return (
     <section
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-easing="ease-in"
       id="contact"
       className="flex flex-col items-start font-poppins py-14 space-y-4 md:items-center md:space-y-20 lg:py-20 transition-all duration-150 ease-linear"
     >
-      <div className="flex flex-col items-start md:items-center">
+      <div className="flex flex-col items-start md:items-center ">
         <h1 className="text-2xl font-bold capitalize py-4 lg:py-0 lg:text-4xl">
           contact us
         </h1>
-        <p className="border-b-2 font-bold border-colorOne text-sm lg:text-lg">
+        <p className="border-b-2 font-bold border-colorOne text-sm lg:text-lg lg:mt-10">
           send your query
         </p>
         <p className="py-2 text-xs lg:text-lg lg:py-0">
