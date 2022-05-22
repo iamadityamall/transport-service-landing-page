@@ -1,6 +1,6 @@
 import React from "react";
 import navLinks from "../../data/navLinks";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { useGlobalContext } from "../../context";
 // import {MdDarkMode} from 'react-icons/md';
@@ -38,7 +38,7 @@ const Sidebar = ({ setNavButton, navButton }) => {
             </Link>
           );
         })}
-        <div className="flex flex-col w-full text-left transition-all duration-150 ease-linear">
+        {/* <div className="flex flex-col w-full text-left transition-all duration-150 ease-linear">
           <NavLink
             to="/privacy"
             className="p-4 px-6 sm:text-lg font-poppins border-b-2 border-gray-50"
@@ -67,7 +67,7 @@ const Sidebar = ({ setNavButton, navButton }) => {
           >
             sign in
           </Link>
-        </div>
+        </div> */}
       </div>
     </aside>
   );

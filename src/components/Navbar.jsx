@@ -8,7 +8,7 @@ import QuickCallToAction from "./Home/QuickCallToAction";
 import { MdDarkMode } from "react-icons/md";
 import { BsSunFill } from "react-icons/bs";
 import { Link } from "react-scroll/modules";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const { navButton, setNavButton, darkmode, changemode } = useGlobalContext();
@@ -45,7 +45,7 @@ const Navbar = () => {
                 className="h-10 md:h-12 object-cover"
               />
             </div>
-            <div className="hidden lg:flex lg:space-x-2 capitalize lg:items-center transition-all duration-300 ease-linear">
+            <div className="hidden lg:flex lg:space-x-4 capitalize lg:items-center transition-all duration-300 ease-linear">
               {navLinks.map((navlink) => {
                 const { id } = navlink;
                 return (
@@ -56,44 +56,48 @@ const Navbar = () => {
                     smooth={true}
                     offset={-85}
                     duration={600}
-                    className="p-2 text-sm hover:border-b-2 hover:border-colorOne cursor-pointer "
+                    className="p-2 text-sm hover:border-b-2 hover:border-colorOne cursor-pointer transition-all duration-150 ease-linear "
                   >
                     {navlink.name}
                   </Link>
                 );
               })}
 
-              <NavLink to="/privacy" className="text-sm px-2 transition-all">
+              {/* <NavLink to="/privacy" className="text-sm px-2 transition-all">
                 privacy policy
               </NavLink>
               <NavLink to="/terms" className="text-sm transition-all">
                 {`terms & condition`}
-              </NavLink>
-              <NavLink to="/" className="text-sm px-3 transition-all">
+              </NavLink> */}
+              {/* <NavLink to="/" className="text-sm px-3 transition-all">
                 home
-              </NavLink>
+              </NavLink> */}
             </div>
             <div className="hidden lg:flex space-x-6 transition-all">
               <button
-                className={`text-xl text-colorOne   ${
+                className={`text-3xl text-colorOne   ${
                   darkmode && "text-black"
                 }`}
                 onClick={() => changemode()}
               >
                 <MdDarkMode />
               </button>
-              <button className="text-sm p-4 bg-colorOne rounded-lg">
+              {/* <button className="text-sm p-4 bg-colorOne rounded-lg">
                 sign in
-              </button>
+              </button> */}
             </div>
             <div className="flex items-center lg:hidden transition-all duration-150 ease-linear">
               <button
-                className={`text-3xl p-1 text-colorOne lg:hidden transition-all duration-150 ease-linear  ${
+                className={` p-2 text-colorOne lg:hidden transition-all duration-150 ease-linear  ${
                   darkmode && "text-black"
                 }`}
                 onClick={() => changemode()}
               >
-                {!darkmode ? <BsSunFill /> : <MdDarkMode />}
+                {!darkmode ? (
+                  <BsSunFill className="text-2xl" />
+                ) : (
+                  <MdDarkMode className="text-2xl" />
+                )}
               </button>
               <button
                 type="button"

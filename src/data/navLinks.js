@@ -1,9 +1,9 @@
 const navlinks = [
-  // {
-  //   id: 0,
-  //   name: "home",
-  //   path: "/",
-  // },
+  {
+    id: 0,
+    name: "home",
+    path: "#hero",
+  },
   {
     id: 1,
     name: "about",
