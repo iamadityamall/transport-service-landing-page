@@ -3,18 +3,13 @@ import { data } from "../../data/about";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="font-poppins flex flex-col space-y-3 py-10 md:items-center md:space-y-10 transition-all duration-150 ease-linear"
-    >
+    <section id="about"  className="font-poppins flex flex-col space-y-3 py-10 md:items-center md:space-y-10 transition-all duration-150 ease-linear">
       <div>
         <h1 className="text-2xl py-4 font-bold capitalize md:text-2xl lg:text-4xl">
           about us
         </h1>
       </div>
-      <div
-        className="grid grid-cols-1 gap-y-4 md:gap-y-0 md:grid-cols-2"
-      >
+      <div className="grid grid-cols-1 gap-y-4 md:gap-y-0 md:grid-cols-2">
         <figure className="  rounded-xl overflow-hidden lg:h-full ">
           <img
             src="./images/delivery.png"

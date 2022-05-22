@@ -6,11 +6,16 @@ import SharedLayout from "./components/SharedLayout";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import "./index.css";
+import { animateScroll as scroll } from "react-scroll/modules";
 
 const App = () => {
   useEffect(() => {
     document.title = "Siddhivinayak Logistics || logistics for all";
-  },[]);
+  }, []);
+
+  useEffect(() => {
+    scroll.scrollToTop("hero");
+  }, []);
 
   return (
     <Routes>

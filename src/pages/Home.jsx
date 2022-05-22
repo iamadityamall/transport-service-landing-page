@@ -13,15 +13,15 @@ const Home = () => {
     <main className="w-[90vw] mx-auto lg:w-[85vw] xl:w-[80vw] scroll-smooth transition-all duration-150 ease-linear">
       <Hero />
       <hr />
-      <Clients />
+      <Clients id="clients"/>
       <hr />
       <Gallery />
       <hr />
-      <About />
+      <About id="about"/>
       <hr />
-      <Services />
+      <Services id="services"/>
       <hr />
-      <Contact />
+      <Contact id="contact"/>
       <hr />
       <Banner />
       <hr />

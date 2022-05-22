@@ -1,9 +1,10 @@
 import React from "react";
 import navLinks from "../../data/navLinks";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { useGlobalContext } from "../../context";
-// import {MdDarkMode} from 'react-icons/md'
+// import {MdDarkMode} from 'react-icons/md';
+import { Link } from "react-scroll/modules";
 
 const Sidebar = ({ setNavButton, navButton }) => {
   const { darkmode } = useGlobalContext();
@@ -24,8 +25,12 @@ const Sidebar = ({ setNavButton, navButton }) => {
           const { id } = navlink;
           return (
             <Link
+              to={navlink.name}
               key={id}
-              to={navlink.path}
+              spy={true}
+              smooth={true}
+              offset={-85}
+              duration={600}
               className="p-4 px-6 sm:text-lg font-poppins border-b-2 border-gray-50"
               onClick={() => setNavButton(false)}
             >
@@ -33,9 +38,36 @@ const Sidebar = ({ setNavButton, navButton }) => {
             </Link>
           );
         })}
-        <Link to="/signin" className="p-4 px-6 sm:text-lg font-poppins">
-          sign in
-        </Link>
+        <div className="flex flex-col w-full text-left transition-all duration-150 ease-linear">
+          <NavLink
+            to="/privacy"
+            className="p-4 px-6 sm:text-lg font-poppins border-b-2 border-gray-50"
+            onClick={() => setNavButton(false)}
+          >
+            privacy policy
+          </NavLink>
+          <NavLink
+            to="/terms"
+            className="text-p-4 px-6 sm:text-lg font-poppins border-b-2 py-3 border-gray-50"
+            onClick={() => setNavButton(false)}
+          >
+            {`terms & condition`}
+          </NavLink>
+          <NavLink
+            to="/"
+            className="p-4 px-6 sm:text-lg font-poppins border-b-2 border-gray-50"
+            onClick={() => setNavButton(false)}
+          >
+            home
+          </NavLink>
+          <Link
+            to="/signin"
+            className="p-4 px-6 sm:text-lg font-poppins border-b-2 border-gray-50"
+            onClick={() => setNavButton(false)}
+          >
+            sign in
+          </Link>
+        </div>
       </div>
     </aside>
   );

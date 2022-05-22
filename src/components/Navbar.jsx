@@ -7,7 +7,8 @@ import Sidebar from "./Home/Sidebar";
 import QuickCallToAction from "./Home/QuickCallToAction";
 import { MdDarkMode } from "react-icons/md";
 import { BsSunFill } from "react-icons/bs";
-// import { Link } from "react-router-dom";
+import { Link } from "react-scroll/modules";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const { navButton, setNavButton, darkmode, changemode } = useGlobalContext();
@@ -31,9 +32,9 @@ const Navbar = () => {
         }`}
       >
         <QuickCallToAction />
-        <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw] transition-all duration-150 ease-linear">
+        <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw] transition-all duration-300 ease-linear">
           <section className="flex justify-between items-center sm:text-2xl py-3 md:py-4 lg:py-6 xl:w-[80vw] xl:mx-auto">
-            <div className="">
+            <div className=" transition-all duration-300 ease-linear">
               <img
                 src={`${
                   darkmode
@@ -44,21 +45,35 @@ const Navbar = () => {
                 className="h-10 md:h-12 object-cover"
               />
             </div>
-            <div className="hidden lg:flex lg:space-x-2 capitalize lg:items-center">
+            <div className="hidden lg:flex lg:space-x-2 capitalize lg:items-center transition-all duration-300 ease-linear">
               {navLinks.map((navlink) => {
                 const { id } = navlink;
                 return (
-                  <a
+                  <Link
+                    to={navlink.name}
                     key={id}
-                    href={navlink.path}
-                    className="p-2 text-sm hover:border-b-2 hover:border-colorOne "
+                    spy={true}
+                    smooth={true}
+                    offset={-85}
+                    duration={600}
+                    className="p-2 text-sm hover:border-b-2 hover:border-colorOne cursor-pointer "
                   >
                     {navlink.name}
-                  </a>
+                  </Link>
                 );
               })}
+
+              <NavLink to="/privacy" className="text-sm px-2 transition-all">
+                privacy policy
+              </NavLink>
+              <NavLink to="/terms" className="text-sm transition-all">
+                {`terms & condition`}
+              </NavLink>
+              <NavLink to="/" className="text-sm px-3 transition-all">
+                home
+              </NavLink>
             </div>
-            <div className="hidden lg:flex space-x-6">
+            <div className="hidden lg:flex space-x-6 transition-all">
               <button
                 className={`text-xl text-colorOne   ${
                   darkmode && "text-black"
