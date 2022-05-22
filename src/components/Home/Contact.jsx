@@ -4,9 +4,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-start font-poppins py-14 md:items-center md:space-y-20 lg:py-20 transition-all duration-150 ease-linear"
+      className="flex flex-col items-start font-poppins py-14 space-y-4 md:items-center md:space-y-20 lg:py-20 transition-all duration-150 ease-linear"
     >
-      <div className="flex flex-col items-start space-y-2 md:items-center">
+      <div className="flex flex-col items-start md:items-center">
         <h1 className="text-2xl font-bold capitalize py-4 lg:py-0 lg:text-4xl">
           contact us
         </h1>

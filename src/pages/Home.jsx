@@ -26,7 +26,6 @@ const Home = () => {
       <Banner />
       <hr />
       <CallToAction />
-      <hr />
     </main>
   );
 };
