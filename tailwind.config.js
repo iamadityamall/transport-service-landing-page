@@ -2,6 +2,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs_1: "320px",
+        xs_2: "375px",
+        xs_3: "425px",
+      },
       colors: {
         colorOne: "#F79044",
         colorTwo: "#1E1C55",
@@ -15,7 +20,7 @@ module.exports = {
       },
       animation: {
         flow: "flow 10s linear infinite",
-        paused:"paused",
+        paused: "paused",
       },
 
       keyframes: {
