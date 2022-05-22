@@ -22,7 +22,7 @@ const Services = () => {
         <Card />
       </div>
       <p className="text-xs text-center font-semibold lg:text-sm">
-        vist and experience many more services with best customer experience
+        visit and experience many more services with best customer experience
       </p>
     </section>
   );
