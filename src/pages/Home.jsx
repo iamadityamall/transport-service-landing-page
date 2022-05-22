@@ -10,7 +10,7 @@ import Gallery from "../components/Home/Gallery";
 
 const Home = () => {
   return (
-    <main className="w-[90vw] mx-auto lg:w-[85vw] xl:w-[80vw] scroll-smooth transition-all duration-150 ease-linear">
+    <main className="w-[90vw] mx-auto lg:w-[85vw] xl:w-[75vw] scroll-smooth transition-all duration-150 ease-linear">
       <Hero />
       <hr />
       <Clients id="clients"/>
