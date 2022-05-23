@@ -219,7 +219,7 @@ const Privacy = () => {
             </div>
           </div>
           <div>
-            <NavLink to="contacts" className="py-2 bg-colorOne rounded-lg px-2">
+            <NavLink to="/#contact" className="py-2 bg-colorOne rounded-lg px-2">
               Contact Us
             </NavLink>
           </div>
