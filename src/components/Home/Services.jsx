@@ -4,10 +4,7 @@ import Card from "./Card";
 const Services = () => {
   return (
     <section
-      data-aos="fade-left"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in"
-      data-aos-once="true"
+      
       id="services"
       className="py-20 flex flex-col space-y-10 font-poppins items-start md:items-center transition-all duration-150 ease-linear lg:h-screen justify-center"
     >

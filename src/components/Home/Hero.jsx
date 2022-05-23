@@ -58,15 +58,17 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <figure className="hidden md:flex lg:w-full transition-all duration-150 ease-linear">
+      <figure
+        className="hidden md:flex lg:w-full transition-all duration-150 ease-linear"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        data-aos-once="true"
+      >
         <img
           src="./images/delivery.png"
           alt="logistics"
           className="w-[40vw] lg:w-full"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in"
-          data-aos-once="true"
         />
       </figure>
     </section>

@@ -16,7 +16,7 @@ const Home = () => {
   },[]);
 
   return (
-    <main className="w-[90vw] mx-auto lg:w-[85vw] xl:w-[75vw] scroll-smooth transition-all duration-150 ease-linear">
+    <main className="w-[90vw] mx-auto lg:w-[85vw] xl:w-[75vw]  transition-all duration-150 ease-linear">
       <Hero />
       <hr />
       <Clients />
