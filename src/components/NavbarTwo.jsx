@@ -50,7 +50,7 @@ const NavbarTwo = () => {
               />
             </NavLink>
             <div className="hidden lg:flex lg:space-x-4 capitalize  lg:items-center transition-all duration-300 ease-linear">
-              <NavLink to="/" className="text-sm px-2 transition-all">
+              <NavLink to="/#home" className="text-sm px-2 transition-all">
                 home
               </NavLink>
               <NavLink to="/privacy" className="text-sm px-2 transition-all">

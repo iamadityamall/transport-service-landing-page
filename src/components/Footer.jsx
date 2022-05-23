@@ -60,11 +60,11 @@ const Footer = () => {
           <ul className="text-sm space-y-2 lg:text-lg">
             <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white transition-all duration-150 ease-linear">
               <BsArrowRightShort />
-              <Link to="privacy">privacy</Link>
+              <Link to="/privacy">privacy</Link>
             </li>
             <li className="flex items-center space-x-2 md:hover:border-b-2 md:hover:border-white transition-all duration-150 ease-linear">
               <BsArrowRightShort />
-              <Link to="terms">{`terms & condition`}</Link>
+              <Link to="/terms">{`terms & condition`}</Link>
             </li>
           </ul>
         </div>
