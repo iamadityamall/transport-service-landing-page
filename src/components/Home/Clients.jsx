@@ -26,8 +26,9 @@ const Clients = () => {
   return (
     <section
       data-aos="fade-up"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       data-aos-easing="ease-in"
+      data-aos-once="true"
       id="clients"
       className="grid grid-cols-1 justify-items-start gap-y-10 py-16 md:justify-items-center lg:grid-cols-2 lg:items-center lg:justify-items-center transition-all duration-150 ease-linear"
     >

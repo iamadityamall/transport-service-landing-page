@@ -4,8 +4,9 @@ const Contact = () => {
   return (
     <section
       data-aos="fade-up"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       data-aos-easing="ease-in"
+      data-aos-once="true"
       id="contact"
       className="flex flex-col items-start font-poppins py-14 space-y-4 md:items-center md:space-y-20 lg:py-20 transition-all duration-150 ease-linear"
     >
@@ -24,7 +25,7 @@ const Contact = () => {
 
       <div className="grid grid-cols-1 gap-y-6 md:gap-y-0 md:grid-cols-3 md:gap-x-5 lg:grid-cols-4">
         <form
-          className="text-black w-full space-y-2 p-3 rounded-xl bg-colorOne/25 lg:w-[20vw] transition-all duration-150 ease-linear"
+          className="text-black w-full space-y-2 p-3 rounded-xl bg-colorOne/25 lg:w-full transition-all duration-150 ease-linear"
           action="https://formsubmit.co/addasjii@gmail.com"
           method="POST"
         >

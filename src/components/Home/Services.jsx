@@ -4,11 +4,12 @@ import Card from "./Card";
 const Services = () => {
   return (
     <section
-      data-aos="fade-up"
-      data-aos-duration="2000"
+      data-aos="fade-left"
+      data-aos-duration="1000"
       data-aos-easing="ease-in"
+      data-aos-once="true"
       id="services"
-      className="py-20 flex flex-col space-y-10 font-poppins items-start md:items-center transition-all duration-150 ease-linear"
+      className="py-20 flex flex-col space-y-10 font-poppins items-start md:items-center transition-all duration-150 ease-linear lg:h-screen justify-center"
     >
       <div className="md:flex md:flex-col md:items-center">
         <h1 className="text-2xl py-4 font-bold tracking-wide capitalize lg:text-4xl">

@@ -19,7 +19,11 @@ const navlinks = [
     name: "contact",
     path: "#contact",
   },
-
+  {
+    id: 4,
+    name: "gallery",
+    path: "#gallery",
+  },
   // {
   //   id: 4,
   //   name: "terms & condition",

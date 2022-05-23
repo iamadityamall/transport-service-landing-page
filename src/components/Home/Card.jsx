@@ -3,7 +3,7 @@ import { BiConversation } from "react-icons/bi";
 
 const Card = () => {
   return (
-    <article className="w-full bg-colorOne/20 text-black p-3 rounded-xl space-y-2 font-poppinss transition-all duration-150 ease-linear">
+    <article className="w-full bg-colorOne/20  p-3 rounded-xl space-y-2 font-poppinss transition-all duration-150 ease-linear">
       <figure>
         <img
           src="./images/delivery.png"

@@ -35,7 +35,10 @@ const NavbarTwo = () => {
         <QuickCallToAction />
         <nav className="font-poppins w-[90vw] mx-auto lg:w-[85vw] transition-all duration-300 ease-linear">
           <section className="flex justify-between items-center sm:text-2xl py-3 md:py-4 lg:py-6 xl:w-[75vw] xl:mx-auto">
-            <div className=" transition-all duration-300 ease-linear">
+            <NavLink
+              to="/"
+              className=" transition-all duration-300 ease-linear"
+            >
               <img
                 src={`${
                   darkmode
@@ -45,7 +48,7 @@ const NavbarTwo = () => {
                 alt="logo"
                 className="h-10 md:h-12 object-cover"
               />
-            </div>
+            </NavLink>
             <div className="hidden lg:flex lg:space-x-4 capitalize  lg:items-center transition-all duration-300 ease-linear">
               <NavLink to="/" className="text-sm px-2 transition-all">
                 home

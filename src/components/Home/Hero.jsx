@@ -1,6 +1,7 @@
 import React from "react";
 
 import { BsInstagram, BsFacebook, BsLinkedin } from "react-icons/bs";
+import Link from "react-scroll/modules/components/Link";
 
 const Hero = () => {
   return (
@@ -12,6 +13,7 @@ const Hero = () => {
         data-aos="fade-right"
         data-aos-duration="1000"
         data-aos-easing="ease-in"
+        data-aos-once="true"
         className="flex flex-col capitalize font-poppins space-y-1 py-10 items-start md:w-[50vw] lg:w-[60vw] lg:space-y-2"
       >
         <h3 className="text-4xl py-2 font-bold px-1 uppercase lg:text-6xl">
@@ -32,12 +34,17 @@ const Hero = () => {
           commodity,we have solutions to both small and large businesses. */}
         </p>
         <div className="flex items-center space-x-5 p-1 pt-4 transition-all duration-150 ease-linear">
-          <button
-            className="text-white p-4 rounded-lg bg-colorOne font-semibold capitalize text-xs text-left tracking-widest transition-all duration-150 ease-linear
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={1000}
+            className="text-white p-4 rounded-lg bg-colorOne font-semibold capitalize text-xs text-left tracking-widest transition-all duration-150 ease-linear cursor-pointer
           "
           >
             get quotation
-          </button>
+          </Link>
           <div className="flex flex-row space-x-3 text-xl p-2 transition-all duration-150 ease-linear">
             <a href="https://instagram.com">
               <BsInstagram />
@@ -59,6 +66,7 @@ const Hero = () => {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in"
+          data-aos-once="true"
         />
       </figure>
     </section>
