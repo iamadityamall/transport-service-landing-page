@@ -19,17 +19,17 @@ const Home = () => {
     <main className="w-[90vw] mx-auto lg:w-[85vw] xl:w-[75vw]  transition-all duration-150 ease-linear">
       <Hero />
       <hr />
-      <Clients />
-      <hr />
-      <Gallery />
-      <hr />
       <About />
       <hr />
       <Services />
       <hr />
-      <Contact />
+      <Clients />
+      <hr />
+      <Gallery />
       <hr />
       <Banner />
+      <hr />
+      <Contact />
       <hr />
       <CallToAction />
     </main>
